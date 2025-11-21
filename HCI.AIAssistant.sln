@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E8F6C00-04E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCI.AIAssistant.API", "src\HCI.AIAssistant.API\HCI.AIAssistant.API.csproj", "{D1F9950D-AD04-4A69-AC33-C35D3402029C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D1F9950D-AD04-4A69-AC33-C35D3402029C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -21,7 +23,13 @@ Global
 		{D1F9950D-AD04-4A69-AC33-C35D3402029C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F9950D-AD04-4A69-AC33-C35D3402029C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D1F9950D-AD04-4A69-AC33-C35D3402029C} = {2E8F6C00-04E4-46AC-95FD-53A97D11828C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A6BBDE9-0BEA-4E81-A561-6FA956A8DB5E}
 	EndGlobalSection
 EndGlobal
