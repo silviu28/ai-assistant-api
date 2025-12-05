@@ -48,12 +48,12 @@ builder.Services.Configure<AppConfigurationService>(builder.Configuration.GetSec
 builder.Services.AddSingleton<ISecretsService>(
     provider => provider.GetRequiredService<IOptions<SecretsService>>().Value
 );
-
 builder.Services.AddSingleton<IAppConfigurationsService>(
     provider => provider.GetRequiredService<IOptions<AppConfigurationService>>().Value
 );
 
 builder.Services.AddSingleton<IParametricFunctions, ParametricFunctions>();
+builder.Services.AddSingleton<IAIAssistantService, AIAssistantService>();
 
 // Add services to the container.
 
