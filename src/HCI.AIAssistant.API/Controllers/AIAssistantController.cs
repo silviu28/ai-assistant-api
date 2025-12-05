@@ -8,17 +8,23 @@ public class AIAssistantController : ControllerBase
 {
     private readonly IAIAssistantService _aIAssistantService;
     private readonly IParametricFunctions _parametricFunctions;
+    private readonly ISecretsService _secretsService;
+    private readonly IAppConfigurationsService _appConfigurationsService;
 
     public AIAssistantController(
         IAIAssistantService aIAssistantService,
-        IParametricFunctions parametricFunctions
+        IParametricFunctions parametricFunctions,
+        ISecretsService secretsService,
+        IAppConfigurationsService appConfigurationsService
     )
     {
         _aIAssistantService = aIAssistantService;
         _parametricFunctions = parametricFunctions;
+        _secretsService = secretsService;
+        _appConfigurationsService = appConfigurationsService;
     }
 
-    [HttpPost("/message")]
+    [HttpPost("message")]
     [ProducesResponseType(typeof(AIAssistantControllerPostMessageResponseDTO), 200)]
     [ProducesResponseType(typeof(ErrorResponseDTO), 400)]
     public async Task<ActionResult> PostMessage([FromBody] AIAssistantControllerPostMessageRequestDTO request)
